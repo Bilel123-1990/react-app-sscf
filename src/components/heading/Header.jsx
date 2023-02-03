@@ -12,12 +12,14 @@ const Header = () => {
      <header>
       <nav className='flexSB'>
         <ul className={click ? "mobile-nav" :"flexSB"} onClick={()=>setClick(false)}>
-          <li>
-            <Link to="/">Acceuil</Link>
-          </li>
+          
+          <li><Link to="/home">Acceuil</Link>    </li>
           <li><Link to="/course">Tous les cours</Link></li>
-          <li><Link to="/about">Formation</Link></li>
-          <li><Link to="/formation">About</Link></li>
+          {/* <li><Link to="/formation">Formation</Link></li> */}
+          <li><Link to="/team">Team</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/price">Tarification</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
       <div className="start">

@@ -3,6 +3,13 @@ import React from 'react'
 import Header from './components/heading/Header'
 import {  BrowserRouter as Router,Routes, Route} from "react-router-dom";
 import Home from './components/Home'
+import About from './components/about/About';
+import CourHome from './components/les cours/CourHome';
+import Team from './components/team/Team';
+import Blog from './components/blog/Blog';
+import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
+import Pricing from './components/pricing/Pricing';
 
 const App = () => {
   return (
@@ -10,12 +17,16 @@ const App = () => {
  
      <Router>
      <Header/>
-     <Home/>
      <Routes>
-          <Route  path="/" exact component={Home} />
+          <Route exact path="/home" element={<Home/>} />
+          <Route exact path="/about" element={<About/>} />
+          <Route exact path="/course" element={<CourHome/>} />
+          <Route exact path="/team" element={<Team/>} />
+          <Route exact path="/price" element={<Pricing/>} />
+          <Route exact path="/blog" element={<Blog/>} />
+          <Route exact path="/contact" element={<Contact/>} />         
       </Routes>
-
-
+      <Footer/>
      </Router>
 
     </div>
