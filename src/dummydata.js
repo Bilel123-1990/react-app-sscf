@@ -313,7 +313,7 @@ export const homeAbout = [
       desc: "This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
     },
     {
-      title: "Where It is hidden by default, until the collapse?",
+      title: "Où est-il caché par défaut, jusqu'à l'effondrement ?",
       desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
     },
     {

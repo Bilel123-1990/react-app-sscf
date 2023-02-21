@@ -10,6 +10,8 @@ import Blog from './components/blog/Blog';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Pricing from './components/pricing/Pricing';
+import Inscri from './components/inscris/Inscri';
+
 
 const App = () => {
   return (
@@ -25,6 +27,8 @@ const App = () => {
           <Route exact path="/price" element={<Pricing/>} />
           <Route exact path="/blog" element={<Blog/>} />
           <Route exact path="/contact" element={<Contact/>} />         
+          <Route exact path="/inscri" element={<Inscri/>} />         
+              
       </Routes>
       <Footer/>
      </Router>

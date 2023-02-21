@@ -1,5 +1,7 @@
 import React from "react"
 import { price } from "../../dummydata"
+import { Link } from "react-router-dom"
+
 
 const PriceCard = () => {
   return (
@@ -12,7 +14,10 @@ const PriceCard = () => {
             {val.price}
           </h1>
           <p>{val.desc}</p>
-          <button className='outline-btn'>COMMENCER...</button>
+
+          <Link to='/inscri'>
+        COMMENCER...
+          </Link>
         </div>
       ))}
     </>
