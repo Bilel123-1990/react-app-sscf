@@ -6,7 +6,7 @@ import './blog.css'
 const Blog = () => {
   return (
     <div>
-        <Back title='Blog Posts'/>
+        <Back title='Platforme Intelligente'/>
 
         <section className='blog padding'>
             <div className='container grid2'>

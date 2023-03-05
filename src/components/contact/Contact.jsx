@@ -211,27 +211,30 @@ const [formData, setFormData] = useState({
 
   return (
     <div>
-        <Back title='Contact Us'/>
+        <Back title='Contactez-Nous'/>
         <section className='contact padding'>
             <div className="container shadow flexSB">
                 <div className="left row">
                     <iframe src={map}>  </iframe>
                 </div>
                 <div className='right row'>
-                    <h1>Contact Us</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, soluta!</p>
+                    <h1>Contactez-nous</h1>
+                    <p>
+                    Notre mission est de fournir une formation
+                     de qualité pour aider les étudiants à développer leur compétences
+                    </p>
                     <div className='items grid2'>
                         <div className="box">
                             <h4>ADRESSE</h4>
-                            <p>122 west 21 st street New York</p>
+                            <p>122 rue hedi nouira Ariana Nord 2080 </p>
                         </div>
                         <div className="box">
                             <h4>Email:</h4>
                             <p>info@gmail.com</p>
                         </div>
                         <div className="box">
-                            <h4>PHONE</h4>
-                            <p>+123 3545 5554</p>
+                            <h4>Telephone</h4>
+                            <p>+216 999 999</p>
                         </div>
                     </div>
 
@@ -239,24 +242,24 @@ const [formData, setFormData] = useState({
 
                     <form ref={form} onSubmit={handleSubmit}>
                         <div className="flexSB">
-                            <input type="text"  placeholder='Name' name='name' value={formData.name} onChange={handleChange}/>
+                            <input type="text"  placeholder='Nom' name='name' value={formData.name} onChange={handleChange}/>
                             {errors.name && <div style={{ color: "red" }}>{errors.name}</div>}
                             <input type="email"  placeholder='Email' name='email' value={formData.email} onChange={handleChange} />
                             {errors.email && <div style={{ color: "red" }}>{errors.email}</div>}
                         </div>
                         {errors.phone && <div style={{ color: "red" }}>{errors.phone}</div>}
-                        <input type="text"  placeholder='Phone' name='phone' value={formData.phone} onChange={handleChange} />
+                        <input type="text"  placeholder='Telephone' name='phone' value={formData.phone} onChange={handleChange} />
                         {errors.subject1 && <div style={{ color: "red" }}>{errors.subject1}</div>}
-                        <input type="text" placeholder='Subject' name='subject1' value={formData.subject1} onChange={handleChange} />
+                        <input type="text" placeholder='Sujet' name='subject1' value={formData.subject1} onChange={handleChange} />
                          {errors.subject2 && <div style={{ color: "red" }}>{errors.subject2}</div>}
-                        <textarea  cols="30" rows="10" name='subject2' value={formData.subject2} onChange={handleChange}>
-                            Create A message here...                   
+                        <textarea placeholder='Vos question ici...' cols="30" rows="10" name='subject2' value={formData.subject2} onChange={handleChange}>
+                            Créer un Message Ici...                   
                          </textarea>
-                         <button type='submit' className='primary-btn'>SEND MESSAGE</button>
+                         <button type='submit' className='primary-btn'>Envoyer le Message</button>
                          {succes && <p className="succes-message">Votre formulaire a été enregistré avec succès !</p>}
                          
                     </form>
-                    <h3>Follow us here</h3>
+                    <h3>Suivez-Nous ici</h3>
                     <span>FACEBOOK INSTAGRAM TWITTER</span>
 
 

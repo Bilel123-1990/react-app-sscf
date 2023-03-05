@@ -412,3 +412,37 @@ export const homeAbout = [
       cover: "./images/testo/t3.webp",
     },
   ]
+  export const etudiant = [
+    {
+      id: 1,
+      nom: "homrani",
+      Prenom: "bilel",
+      adresse_electronique: "homrani.bilel@yahoo.fr",
+      num_tel: "55016127",
+      programme_etude:"devloppement web",
+    },
+    {
+      id: 2,
+      nom: "ROGER ",
+      Prenom: "SCOTT",
+      adresse_electronique: "scott.roger@gmail.com",
+      num_tel: "21206134",
+      programme_etude:"design",
+    },
+    {
+      id: 3,
+      nom: "Elon",
+      Prenom: "MuSK",
+      adresse_electronique: "elon.musk@gmail.com",
+      num_tel: "29000999",
+      programme_etude:"fullstack_js",
+    },
+  ]
+
+  export const apprenant = [
+  { id: 1, nom: "Dupont", prenom: "Pierre", age: 23 },
+  { id: 2, nom: "Martin", prenom: "Marie", age: 26 },
+  { id: 3, nom: "Dubois", prenom: "Jean", age: 22 },
+  { id: 4, nom: "Lefebvre", prenom: "Sophie", age: 24 },
+  { id: 5, nom: "Rousseau", prenom: "Pierre", age: 25 },
+  ]
